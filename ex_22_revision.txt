@@ -1,0 +1,32 @@
+#=hashtag , used for a conversation with the reader
+"=double quote
+'=single quote
+(=open barcket
+)=close bracket
++=plus
+-=minus
+/=slash
+*=multiply
+\=backslash
+,=comma
+= equal
+_=underscore
+.=dot
+{=curly brackets open
+}=curly brackets closed
+print=prints the text or variables inbetween the double quotes in the brackets
+f=it embeds the expressions into a string 
+!=exclamation mark
+end=' ' =continues with the next line
+\n = linefeed
+print("""=prints continuosly to the next line
+\t=horizontal tab
+input()=enter the value in terminal run box
+argv= arguement variable
+args=variable no.of aguements changes to funct.
+>=greater than
+<=lesser than
+:=colon
+truncate=delete file
+def=defining the function
+
