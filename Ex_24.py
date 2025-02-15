@@ -7,7 +7,7 @@ print('\n new lines and \t tabs.')
 poem = """
 \tThe lovely world
 with logic so firmly planted
-cannot discern \n the needs of love
+cannot discern \nthe needs of love
 and requires an explanation
 \n\t\there there is none
 """
@@ -18,17 +18,17 @@ print("-----------------")
 
 
 ten = 8+2+40-20-20
-print(f"this should be ten{ten}")
+print(f"this should be {ten}")
 
 #now introducing def funct.
 def secret_formula(started):    
-    r15= started *500
-    innova = ktm /1000
+    ktm= started *50
+    innova = ktm /100
     pulsar = innova/100
     return ktm , innova , pulsar
 
-start_point= 10000
-r15 , innova , pulsar = secret_formula(start_point)
+start_point= 1000
+ktm , innova , pulsar = secret_formula(start_point)
 
 #another way to format
 print("with a starting point of : {}".format(start_point))
