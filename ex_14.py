@@ -22,7 +22,7 @@ place=input(prompt)
 #now gathering informations from answers
 
 print(f"""
-so , now you likes me {likes}.
+so , now you like me {likes}.
 you are from {place}. 
 and your name is {name}.
 """)
