@@ -13,6 +13,6 @@ print("he is very tall")
 
 #now adding all var to get total
 total = my_age + my_height + my_weight 
-print(f"if i add {my_age},{ my_height }and{my_weight} i get {total}")
+print(f"if i add {my_age},{ my_height } and {my_weight} i get {total}")
 #you may also add , sub, mul,div all variables inside the print funct.
  
