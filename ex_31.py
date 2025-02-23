@@ -1,6 +1,3 @@
-from sqlite3.dbapi2 import _Statement
-
-
 print("""you are in coding work with two pc
 do you go with pc #1 or pc#2?""")
 
@@ -40,4 +37,3 @@ elif pc == "2" :
 
 else:    
     print("you stumble around and fall on a krife and die . good job!")
-    
