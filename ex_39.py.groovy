@@ -1,42 +1,51 @@
-sates = {
-    'Tamilnadu' : 'TN'
-    'california' : 'CN'
-    'kerala' : 'kl'
-    'New York' : 'NY'
+states = {
+    'Tamilnadu' : 'TN',
+    'kerala' : 'KL',
+    'California' : 'CA',
+    'New York' : 'NY',
+    'Goa' : 'GA'
 }
 
 cities = {
-    'namakkal' : ' NKL'
-    'salem' : 'SLM'
-    'san fransisco' : 'SN'
+    'CA' : 'San Francisco',
+    'GA' : 'Detroit',
+    'KL' : 'kochi'
 }
 
-cities['TN']
-cities['NY']
+cities['NY'] = 'New York'
+cities['TN'] = 'Tamilnadu'
 
-print('-'*10)
 
-print("NY state has :",cites['NY'])
-print("TN state has :", cities['TN'])
+print('-' * 10)
+print("NY state has: ", cities['NY'])
+print("TN state has: ", cities['TN'])
 
-print('-' *10)
-print("New york abeviation is :", states [new york])
-print("kerala abreviation is : ", states[kerala])
 
-print('-' *10)
-print("Tamilnadu has:", cities[states[states['tamilnadu']]])
-print("kerala has :" , cities[states['kerala']])
+print('-' * 10)
+print("Goa has: ", cities[states['Goa']])
+print("kerala has: ", cities[states['kerala']])
 
-print('-'*10)
-for state , abrev in list(states.items()):
-print(f"{state} state is abbreviated {abbbrev}")
-print(f"and had city {cities[abbrev]}")
 
-print('-'*10)
-state = stetes.get('texas.')
+print('-' * 10)
+for state, abbrev in states.items():
+    print(f"{state} is abbreviated {abbrev}")
+
+
+print('-' * 10)
+for abbrev, city in cities.items():
+    print(f"{abbrev} has the city {city}")
+
+
+print('-' * 10)
+for state, abbrev in states.items():
+    print(f"{state} is abbreviated {abbrev} and has city {cities[abbrev]}")
+
+
+print('-' * 10)
+state = states.get('Texas', None)
 
 if not state:
-    print("sorry, no texas.")
+    print('Sorry, no Texas.')
 
-ciy = cities.get('tx' , 'does not exist')
-print(f"the city for the state 'tx' is : {city}")
+city = cities.get('TX', 'Does Not Exist')
+print(f"The city for the state 'TX' is: {city}")
