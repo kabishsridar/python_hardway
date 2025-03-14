@@ -1,7 +1,7 @@
 #now assigning values or strings to variables
 my_name = 'kabish'
-my_age = '14'
-my_weight ='60 '
+my_age = '17'
+my_weight ='60'
 my_height ='175'
 my_hair ='black'
 
