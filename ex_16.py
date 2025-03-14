@@ -1,7 +1,7 @@
 from sys import argv
 
 #now assigning arguements
-script , filename = argv,argv
+script , filename = argv
 #now introducing the filename
 
 print(f"now we are going to erase the {filename}file.")
@@ -33,3 +33,16 @@ target.write("\n")
 #closing file
 print("and  finally ,closing the file")
 target.close()
+
+print(f"We're going to read {filename}.")
+print("If you don't want that, hit CTRL-C (^C).")
+print("If you do want that, hit RETURN.")
+
+input("> ")
+
+print("Opening the file...")
+
+txt = open(filename)
+print(txt.read())
+txt.close()
+# to execute this code you should open cmd and enter python {this file name}.py {file name to be trncated and changed}
