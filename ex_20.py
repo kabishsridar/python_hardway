@@ -1,7 +1,7 @@
 from sys import argv
 
 #now assigning the argv value
-script, input_file = argv,argv
+script, input_file = argv
 #now introducing the def funct. to read the file
 def print_all(f):    
     print(f.read())
@@ -12,7 +12,7 @@ def rewind(f):
 def print_a_line(line_count,f):    
     print(line_count,f.readline())
 
-current_file = open(input_file)
+current_file = open("text.txt")
 #now using \n to line feed
 print("first lets print whole file :\n")
 
@@ -32,3 +32,4 @@ print_a_line(current_line,current_file)
 
 current_line=current_line+1
 print_a_line(current_line,current_file)
+# to execute this programme open cmd and enter python {this file name} {file name to execute}
