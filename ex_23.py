@@ -1,5 +1,5 @@
 import sys
-script,input_encoding,error  = sys.argv , sys.argv , sys.argv
+script,input_encoding,error  = sys.argv
 
 #introducing def funct.
 def main(language_file,encoding,errors):    
@@ -16,6 +16,7 @@ def print_line(line,encoding,errors):
 
     print(raw_bytes,"<==>",cooked_string)
 
-languages = open("languages.txt",encoding="utf-8")
+languages = open("text.txt",encoding="utf-8")
 
 main(languages,input_encoding,error)
+#to execute this code open cmd and enter python {this file name} {language file name}
