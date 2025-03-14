@@ -1,76 +1,80 @@
 from sys import exit
 from tracemalloc import start
-# introducing def funct.
-def gold_room():    
-    print("this room is filled with gold . how much do you need?")
 
-#now assigning the input 
+# Defining the functions
+def gold_room():
+    print("This room is filled with gold. How much do you need(in numbers)?")
+    
     choice = input(">")
-    if "0" in choice or "1" in choice:    
+    if "0" in choice or "1" in choice:
         how_much = int(choice)
-    else:    
-        dead("man, learn to type a number.")
+    else:
+        dead("Man,type a number.")
 
-    if how_much < 50:    
-        print("nice you arent greedy you won!")
+    if how_much < 50:
+        print("Nice, you aren't greedy! You won!")
         exit(0)
-    else:    
-        dead("you greedy bastard")
+    else:
+        dead("You greedy person!")
 
 
 def bikes_room():
-    print("there are many bikes here")
-    print("it is fully new modeled")
-    print("the r15 bike is especially good")
-    print("when we are going to a ride?")
+    print("There are many bikes here.")
+    print("It is fully new modeled.")
+    print("The R15 bike is especially good.")
+    print("When are we going for a ride?")
     going_to_ride = False
 
-    while True :    
-        choice = input(">")
+    while True:
+        choice = input("> ")
 
-#the choice tells that the reader can type this or that
-        if choice == "take bikes":    
-            dead("the bikes are used in wheelies")
-        elif choice == "good bike"and not going_to_ride:
-            print("we gone to a ride")
-            print("we can use it now")
-            going_to_ride=True
-        elif choice == "good bike "and going_to_ride:
-            dead("you got accident with that bike")
-        elif choice == "good bike "and going_to_ride:
+        if choice == "now":
+            print("The bikes are used in wheelies. Feel free to use them!")
             gold_room()
-        else:    
-            print("i got no idea what that means")
+        elif choice == "not now" and not going_to_ride:
+            print("We've gone for a ride.")
+            print("We can use it now.")
+            going_to_ride = True
+        elif choice == "ride" and going_to_ride:
+            print("Great! We're going for a ride.")
+            gold_room()
+        elif choice == "good bike" and going_to_ride:
+            dead("You got into an accident with that bike.")
+        else:
+            print("I have no idea what that means. Try again.")
 
-def zombie_room():    
-    print("here is the great evil zombie ")
-    print("he,it,whatever starts at you and go insane")
-    print("do ypu flee for your life eat for your head")
+def zombie_room():
+    print("Here is the great evil zombie.")
+    print("It starts at you and goes insane.")
+    print("Do you flee for your life or fight for your head?")
 
     choice = input("<")
 
-    if "zombie"in choice:    
+    if "zombie" in choice:
         start()
-    elif"head" in choice:    
-        dead("well that was good ")
-    else: zombie_room()
+    elif "head" in choice:
+        dead("Well, that was good.")
+    else:
+        zombie_room()
 
-def dead(why):    
-    print(why,"good job")
+
+def dead(why):
+    print(why, "Good job!")
     exit(0)
 
-def start():    
-    print("you are in a dark room")
-    print("there is a door to your left and right")
-    print("which one will you choose")
+
+def start():
+    print("You are in a dark room.")
+    print("There is a door to your left and right.")
+    print("Which one will you choose?")
 
     choice = input(">")
 
-    if choice == "left":    
+    if choice == "left":
         bikes_room()
-    elif choice =="left":    
+    elif choice == "right":
         zombie_room()
-    else:    
-        dead("you stumble around the room until you starve")
+    else:
+        gold_room
 
-start()    
+start()
