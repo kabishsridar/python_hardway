@@ -4,10 +4,10 @@ do you go with pc #1 or pc#2?""")
 pc = input(">")
 
 if pc == "1" :    
-    print("there was an error ")
-    print("how will you fix that")
-    print("1. i have r15")
-    print("2.i have royal enfield")
+    print("now you no need to fix the code")
+    print("have fun with which you choose")
+    print("1. i will take r15")
+    print("2.i will take royal enfield")
 #now assigning the input string
     r15 = input(">")
 
@@ -20,19 +20,19 @@ if pc == "1" :
 
 #now assigning elif Statement
 elif pc == "2" :    
-    print("it was very speed laike a fraction of second")
+    print("it was very speed like a fraction of second")
     print("1.dell")
-    print("2.many errors")
-    print("3.smooth pc")
+    print("2.asus")
+    print("3.MAC")
 
     insanity= input (">")
 
     if insanity =="1"or insanity == "2":    
-        print("your body survives powered by a mind jello.")
+        print("the pc had no problem and you done the work successfully.")
 
         print("good job")
     else:    
-        print("the insanity roots your eyes into a pool of muck")
+        print("the pc is tough to repair but you did it")
         print("good job")
 
 else:    
