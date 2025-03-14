@@ -1,7 +1,7 @@
 #here now assigning \t for horizontal tab
 car = "\tI'm kabish."
 #here \n is used for linefeed
-jeep = "\tI'm testing\nsecond line."
+jeep = "\tI'm testing\n\tsecond line."
 
 #\t is known as horizontal tabs
 #the \t leaves some space before starting a word 
@@ -18,4 +18,3 @@ print(car)
 print(jeep)
 print(bike)
 #the \t string uses to start the text after some horizontal tabs
- 
