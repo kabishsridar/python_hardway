@@ -1,0 +1,10 @@
+#this should be stored in a file name sample
+def apple():
+    print("I am Apple")
+    
+tangerine = "living reflection of a dream"
+
+#this should be saved in another file and to be executed
+import sample as m
+m.apple()
+print(m.tangerine)
