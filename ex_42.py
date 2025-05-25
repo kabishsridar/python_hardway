@@ -5,6 +5,8 @@ class Dog(Animal): # set dog is an animal
         self.name = name
     def __str__(self):
         return f"Dog named {self.name}"
+    def name_length(self):
+        return f"Length of name is {len(self.name)}"
 class Cat(Animal):
     def __init__(self, name):
         self.name = name
@@ -25,6 +27,13 @@ class Salmon(Fish): # salmon as a fish
 class Halibut(Fish):
     pass
 
+name_list = ["Dog1","Dog2","Dog3","Dog4","Dog5","Dog6","Dog7","Dog8","Dog9"]
+dog_list = []
+for dog in name_list:
+    temp = Dog(dog)
+    dog_list.append(temp)
+# print(len(dog_list[3].name))
+print(dog_list[5].name_length())
 rover = Dog("Rover")
 satan = Cat("Satan")
 mary = Person("Mary")
@@ -32,3 +41,5 @@ mary.pet = satan
 
 # display rover
 print(rover)
+print(rover.name)
+print(mary.name)
