@@ -1,4 +1,8 @@
 #this should be saved in another file and to be executed
 import sample as m
+from ex_42 import Dog
 m.apple()
 print(m.tangerine)
+
+pinky = Dog("pinky")
+print(pinky)
