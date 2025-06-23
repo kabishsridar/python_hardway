@@ -1,11 +1,11 @@
-import random
+import random # importing modules
 import sys
 from urllib.request import urlopen # import urllib to download a list of words
 
 # URL containing words
 word_url = "http://learncodethehardway.org/words.txt"
 words = []
-
+fileout = open('ooplog_data.txt', 'a') # opening a file in write mode to store the questions, inputs, and answers
 # Dictionary of code snippets and their English descriptions
 phrases = {
     "class %%%(%%%):":
@@ -44,7 +44,7 @@ def convert(snippet, phrase):
         result = sentence[:]
 
         for word in class_names:
-            result = result.replace("%%%", word, 1)
+            result = result.replace("%%%", word, 1) # in place of %%% the words from the url will be replaced
         for word in other_names:
             result = result.replace("***", word, 1)
         for word in param_names:
@@ -67,9 +67,16 @@ try:
             if phrase_first:
                 question, answer = answer, question
 
-            print(question)
-            input(">")
-            print(f"ANSWER: {answer}\n\n")
+            fileout.write("QUESTION:") # to write the questions into the file
+            fileout.write("\n")
+            print(question) # displays the question in terminal
+            fileout.write(f"{question} \n")
+            usr_input = input(">")
+            fileout.write(f"USER INPUT: {usr_input} \n")
+            answer = (f"ACTUAL ANSWER: {answer}\n\n")
+            print(answer)
+            fileout.write(answer)
+        fileout.close() # closing the file at last
 
 except EOFError:
     print("\nBye")

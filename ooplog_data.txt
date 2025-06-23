@@ -1,0 +1,22 @@
+Question:
+class Division(object):
+	def connection(self, breakfast, balance) 
+
+USER INPUT: class division  has a method connection with self, breakfast, balance as a parameters 
+ACTUAL ANSWER: Class Division has-a function connection that takes self and breakfast, balance parameters.
+
+QUESTION:
+class Bone(object):
+	def daughter(self, bell) 
+USER INPUT: class Bone has a method daughter with parameters self and bell 
+ACTUAL ANSWER: Class Bone has-a function daughter that takes self and bell parameters.
+
+QUESTION:
+bath = Blow() 
+USER INPUT: set bath to an instance of clss blow 
+ACTUAL ANSWER: Set bath to an instance of class Blow.
+
+QUESTION:
+box.dog(bit, brother) 
+USER INPUT: from box get the function dog with parameters bit and brother 
+ACTUAL ANSWER: From box get the dog function, call it with self and parameters bit, brother.
