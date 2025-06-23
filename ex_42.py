@@ -35,10 +35,12 @@ for dog in name_list:
 # print(len(dog_list[3].name))
 print(dog_list[5].name_length())
 rover = Dog("Rover")
+# Dog class is the die here 
+# assigning rover to the Dog object
 satan = Cat("Satan")
 mary = Person("Mary")
 mary.pet = satan
-
+# one object can have another object as attribute
 # display rover
 print(rover)
 print(rover.name)
