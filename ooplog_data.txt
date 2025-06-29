@@ -20,3 +20,11 @@ QUESTION:
 box.dog(bit, brother) 
 USER INPUT: from box get the function dog with parameters bit and brother 
 ACTUAL ANSWER: From box get the dog function, call it with self and parameters bit, brother.
+QUESTION:
+class Balloon(object):
+	def can(self, bulb, car) 
+USER INPUT: class Balloon has a method can with parameters self, bulb and car 
+ACTUAL ANSWER: Class Balloon has-a function can that takes self and bulb, car parameters.
+
+QUESTION:
+class Border(Bed): 
