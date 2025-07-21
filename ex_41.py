@@ -1,11 +1,12 @@
 import random # importing modules
 import sys
 from urllib.request import urlopen # import urllib to download a list of words
+from datetime import datetime
 
 # URL containing words
 word_url = "http://learncodethehardway.org/words.txt"
 words = []
-fileout = open('ooplog_data.txt', 'a') # opening a file in write mode to store the questions, inputs, and answers
+fileout = open('python_hardway\\ooplog_data.txt', 'a') # opening a file in write mode to store the questions, inputs, and answers
 # Dictionary of code snippets and their English descriptions
 phrases = {
     "class %%%(%%%):":
@@ -59,6 +60,9 @@ try:
         snippets = list(phrases.keys())
         random.shuffle(snippets)
         print(snippets)
+
+        time = datetime.now()
+        fileout.write(str(time) + "\n")
 
         for snippet in snippets:
             phrase = phrases[snippet]
